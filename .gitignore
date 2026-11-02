@@ -1,0 +1,43 @@
+# Go 编译产物与缓存
+bin/
+.gocache/
+vendor/
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+coverage/
+
+# 前端依赖与构建产物
+node_modules/
+dist/
+.vite/
+*.tsbuildinfo
+
+# 本地配置与运行时数据
+/blog-management/config.yaml
+*.local.yaml
+.env
+.env.*
+!.env.example
+logs/
+*.log
+uploads/
+*.pid
+*.db
+*.sqlite*
+*.pem
+*.key
+
+# 编辑器与临时文件
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*.tmp
+*~

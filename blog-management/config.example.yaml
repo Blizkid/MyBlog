@@ -1,0 +1,21 @@
+app:
+  name: "BlogManagement"
+  mode: "dev"
+  port: 8080
+  token_expiration: 8
+  # 推荐通过 JWT_SECRET 环境变量设置随机密钥；环境变量优先于此配置。
+  jwt_secret: ""
+
+database:
+  # 修改为自己的数据库连接；也可通过 MYSQL_DSN 环境变量覆盖。
+  dsn: "blog_user:change_me@tcp(127.0.0.1:3306)/myblog?charset=utf8mb4&parseTime=True&loc=Local"
+
+log:
+  level: "info"
+  mode: "both"
+  file_path: "./logs"
+  file_name: "myblog"
+  max_size: 100
+  max_backups: 7
+  max_age: 30
+  compress: true
